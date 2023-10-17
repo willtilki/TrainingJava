@@ -15,7 +15,7 @@ public class Test {
         // A objeto de la clase base se puede asignar cualquier objeto de cualquiera de sus clases derivadas.
         //U de cualquiera de sus clases derivadas
         Invoice invoice = new Invoice();
-        Document document = invoice; //asigno obj. invoice a obj document( de la clase base)
+        Document document = invoice; //asigno obj. invoice a obj document( de la clase padre)
 
         showData(document); // al objeto showData le paso un objeto que por declaraciòn es de la clase document
 
