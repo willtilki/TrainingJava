@@ -4,7 +4,14 @@ import models.Documento;
 
 public class Menu {
 
-  public void showData(Documento documentDocumeto) {
-    System.out.println(documenDocumeto.infoDoc());
+  Documento doc;
+
+  public Menu(Documento doc) {
+    this.doc = doc;
   }
+
+  public void showData() {
+    System.out.println(doc.infoDoc());
+  }
+
 }

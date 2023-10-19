@@ -13,24 +13,14 @@ import models.Invoice;
 public class Principal {
 
   public static void main(String[] args) {
-   // Siempre hay que tener una class para las vistas
-    Menu menu = new Menu();
+    // Siempre hay que tener una class para las vistas
+
+    Invoice invoice = new Invoice();
+    Documento doc = new Documento();
+
+    Menu menu = new Menu(invoice);
 
 
-
-     Invoice invoice = new Invoice();
-     Documento doc = new Documento();
-
-    // Documento document = invoice;
-    // showData(document);
-    // Delivery delivery = new Delivery();
-    // document = delivery;
-
-    // menu.showData(document);
-
-    // Check check = new Check();
-    // document = check;
-
-    menu.showData(doc);
+    menu.showData();
   }
 }
